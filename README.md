@@ -4,7 +4,7 @@
 
 ## Road map
 
-- [ ] Deploy v0.0.1 to Vercel ("Hello World" version)
+- [x] Deploy v0.0.1 to Vercel ("Hello World" version)
 - [ ] Add code style formatting on IDE (ESLint config)
 - [ ] Add code style formatting on PR (GitHub Actions ESLint config)
 - [ ] Add tests (Jest, Coveralls)
