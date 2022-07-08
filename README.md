@@ -2,7 +2,7 @@
 
 [Trakt](https://trakt.tv/) clone made with [Next.js](https://nextjs.org/) + [TypeScript](https://www.typescriptlang.org/) and the [TMDB](https://www.themoviedb.org/) API.
 
-## Road map
+## Roadmap
 
 - [x] Deploy v0.0.1 to Vercel ("Hello World" version)
 - [x] Add code style formatting on IDE (ESLint config)

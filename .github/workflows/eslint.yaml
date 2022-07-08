@@ -1,0 +1,36 @@
+name: ESLint Auto Fix
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    # The branches below must be a subset of the branches above
+    branches: [ "main" ]
+
+jobs:
+  eslint:
+    name: Run ESLint Auto Fix
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      security-events: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Cache node_modules
+        uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-${{ hashFiles('yarn.lock') }}
+
+      - name: Install Dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: THE AUTO FIX
+        run: yarn lint:fix
+
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}

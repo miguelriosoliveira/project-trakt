@@ -1,6 +1,5 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-
 import styles from '../styles/Home.module.css';
 
 const Home: NextPage = () => {
@@ -10,7 +9,7 @@ const Home: NextPage = () => {
 				<title>Project Trakt</title>
 				<meta
 					name="description"
-					content="Trakt clone made with Next.js + TypeScript and the TMDB API"
+					content="Trakt clone made with Next.js + TypeScript and the TMDB APIIIIIIII"
 				/>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
