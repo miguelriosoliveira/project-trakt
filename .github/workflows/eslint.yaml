@@ -30,14 +30,5 @@ jobs:
       - name: THE AUTO FIX
         run: yarn lint:fix
 
-      - name: Commit changes
-        run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add .
-          git commit -m "Commit from GitHub Actions (ESLint Auto Fix)"
-          git push
-      #   uses: EndBug/add-and-commit@v9
-      #   with:
-      #     default_author: user_info
-      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: stefanzweifel/git-auto-commit-action@v4
+
