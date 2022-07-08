@@ -26,11 +26,12 @@ jobs:
           path: node_modules
           key: ${{ runner.os }}-${{ hashFiles('yarn.lock') }}
 
-      - name: Install Dependencies
+      - name: Install dependencies
         run: yarn install --frozen-lockfile
 
-      - name: THE AUTO FIX
+      - name: Fix auto-fixable problems
         run: yarn lint:fix
 
-      - uses: stefanzweifel/git-auto-commit-action@v4
+      - name: Add, commit and push changed files
+        uses: stefanzweifel/git-auto-commit-action@v4
 
