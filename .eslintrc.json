@@ -1,3 +1,92 @@
 {
-  "extends": "next/core-web-vitals"
+	"env": {
+		"browser": true,
+		"es2021": true,
+		"node": true
+	},
+	"extends": [
+		"next/core-web-vitals",
+		"airbnb",
+		"plugin:react/recommended",
+		"plugin:react-hooks/recommended",
+		"plugin:prettier/recommended",
+		"plugin:unicorn/recommended"
+	],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": "latest",
+		"sourceType": "module"
+	},
+	"plugins": ["react", "react-hooks", "@typescript-eslint", "prettier", "unicorn"],
+	"rules": {
+		"camelcase": "off",
+		"no-case-declarations": "off",
+		"no-unused-vars": "off",
+
+		"@typescript-eslint/explicit-module-boundary-types": "off",
+		"@typescript-eslint/no-unused-vars": "error",
+		"@typescript-eslint/no-use-before-define": "error",
+
+		"import/extensions": ["error", "ignorePackages", { "ts": "never", "tsx": "never" }],
+		"import/order": [
+			"error",
+			{
+				"newlines-between": "always",
+				"alphabetize": {
+					"order": "asc",
+					"caseInsensitive": true
+				}
+			}
+		],
+		"import/prefer-default-export": "off",
+
+		"jsx-a11y/anchor-is-valid": "off",
+
+		"prettier/prettier": "error",
+
+		"react/function-component-definition": [
+			"warn",
+			{ "namedComponents": ["function-declaration", "arrow-function"] }
+		],
+		"react/prop-types": "off",
+		"react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
+		"react/jsx-indent": ["warn", "tab"],
+		"react/jsx-props-no-spreading": "off",
+		"react/react-in-jsx-scope": "off",
+		"react/require-default-props": "off",
+
+		"react-hooks/exhaustive-deps": "warn",
+		"react-hooks/rules-of-hooks": "error",
+
+		"unicorn/filename-case": [
+			"error",
+			{
+				"cases": {
+					"camelCase": true,
+					"pascalCase": true
+				}
+			}
+		],
+		"unicorn/no-array-for-each": "off",
+		"unicorn/no-nested-ternary": "off",
+		"unicorn/no-null": "off",
+		"unicorn/prevent-abbreviations": [
+			"error",
+			{
+				"replacements": {
+					"ref": false,
+					"refs": false,
+					"prop": false,
+					"props": false
+				},
+				"allowList": {
+					"props": true,
+					"params": true
+				}
+			}
+		]
+	}
 }
