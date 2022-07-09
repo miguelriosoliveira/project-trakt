@@ -1,4 +1,4 @@
-name: ESLint Auto Fix
+name: ESLint Auto-fix + Tests
 
 on:
   push:
@@ -8,8 +8,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  eslint:
-    name: Run ESLint Auto Fix
+  main:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -31,6 +30,9 @@ jobs:
 
       - name: Fix auto-fixable problems
         run: yarn lint:fix
+
+      - name: Run tests
+        run: yarn test
 
       - name: Add, commit and push changed files
         uses: stefanzweifel/git-auto-commit-action@v4
