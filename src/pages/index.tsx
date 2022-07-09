@@ -10,7 +10,7 @@ const Home: NextPage = () => {
 				<title>Project Trakt</title>
 				<meta
 					name="description"
-					content="Trakt clone made with Next.js + TypeScript and the TMDB APIIIIIIII"
+					content="Trakt clone made with Next.js + TypeScript and the TMDB API"
 				/>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>

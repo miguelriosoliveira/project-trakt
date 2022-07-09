@@ -2,7 +2,8 @@
 	"env": {
 		"browser": true,
 		"es2021": true,
-		"node": true
+		"node": true,
+		"jest": true
 	},
 	"extends": [
 		"next/core-web-vitals",
@@ -31,6 +32,10 @@
 		"@typescript-eslint/no-use-before-define": "error",
 
 		"import/extensions": ["error", "ignorePackages", { "ts": "never", "tsx": "never" }],
+		"import/no-extraneous-dependencies": [
+			"error",
+			{ "devDependencies": ["!**/*.test.js", "!**/*.spec.js"] }
+		],
 		"import/order": [
 			"error",
 			{

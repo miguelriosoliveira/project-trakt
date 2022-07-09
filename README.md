@@ -5,7 +5,12 @@
 ## Roadmap
 
 - [x] Deploy v0.0.1 to Vercel ("Hello World" version)
-- [x] Add code style formatting on IDE (ESLint config)
-- [x] Add code style formatting on PR (GitHub Actions ESLint config)
-- [ ] Add tests (Jest, Coveralls)
-- [ ] Add Quality Gate (SonarCloud)
+- [x] Setup code style formatting on IDE (ESLint config)
+- [x] Setup code style formatting on PR (GitHub Actions ESLint config)
+- [ ] Setup tests (Jest)
+- [ ] Setup tests on PR (GitHub Actions Jest config)
+- [ ] Setup SASS instead of CSS
+- [ ] Setup pre-commit hooks (Husky)
+- [ ] Setup Quality Gate (SonarCloud)
+- [ ] Setup Quality Gate analysis on PR
+- [ ] Setup Quality Gate coverage analysis
