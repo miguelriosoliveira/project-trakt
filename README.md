@@ -15,6 +15,6 @@
 - [x] Setup SASS instead of CSS
 - [x] Setup dependency watching (Dependabot)
 - [ ] Setup pre-commit hooks (Husky)
-- [ ] Setup Quality Gate (SonarCloud)
-- [ ] Setup Quality Gate analysis on PR
+- [x] Setup Quality Gate (SonarCloud)
+- [x] Setup Quality Gate analysis on PR
 - [ ] Setup Quality Gate coverage analysis
