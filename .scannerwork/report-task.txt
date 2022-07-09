@@ -3,5 +3,5 @@ projectKey=miguelriosoliveira_project-trakt
 serverUrl=https://sonarcloud.io
 serverVersion=8.0.0.30143
 dashboardUrl=https://sonarcloud.io/dashboard?id=miguelriosoliveira_project-trakt&branch=main
-ceTaskId=AYHlWH6CrGi8A64TaI3M
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AYHlWH6CrGi8A64TaI3M
+ceTaskId=AYHlWjno56HG5_ieIHVI
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AYHlWjno56HG5_ieIHVI
