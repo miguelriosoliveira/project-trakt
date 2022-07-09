@@ -1,4 +1,4 @@
-name: ESLint Auto-fix + Tests
+name: CI
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  main:
+  ci:
     runs-on: ubuntu-latest
     permissions:
       contents: read
