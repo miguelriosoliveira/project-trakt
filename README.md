@@ -8,7 +8,7 @@
 - [x] Setup code style formatting on IDE (ESLint config)
 - [x] Setup code style formatting on PR (GitHub Actions ESLint config)
 - [x] Setup tests (Jest)
-- [ ] Setup tests on PR (GitHub Actions Jest config)
+- [x] Setup tests on PR (GitHub Actions Jest config)
 - [ ] Setup SASS instead of CSS
 - [ ] Setup pre-commit hooks (Husky)
 - [ ] Setup Quality Gate (SonarCloud)
