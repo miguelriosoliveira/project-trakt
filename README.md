@@ -9,7 +9,7 @@
 - [x] Setup code style formatting on PR (GitHub Actions ESLint config)
 - [x] Setup tests (Jest)
 - [x] Setup tests on PR (GitHub Actions Jest config)
-- [ ] Setup SASS instead of CSS
+- [x] Setup SASS instead of CSS
 - [ ] Setup pre-commit hooks (Husky)
 - [ ] Setup Quality Gate (SonarCloud)
 - [ ] Setup Quality Gate analysis on PR
