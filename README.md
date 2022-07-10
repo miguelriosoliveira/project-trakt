@@ -9,6 +9,8 @@
 
 ### v0.0.1 - The Technical Foundation
 
+The goal here is to achieve a healthy devops culture and a pleasant dev experience for the project.
+
 - [x] Deploy v0.0.1 to Vercel ("Hello World" version)
 - [x] Setup code style formatting on IDE (ESLint config)
 - [x] Setup code style formatting on PR (GitHub Actions ESLint config)
@@ -20,3 +22,10 @@
 - [x] Setup Quality Gate (SonarCloud)
 - [x] Setup Quality Gate analysis on PR
 - [x] Setup Quality Gate coverage analysis
+
+###  v0.1.0 - The First Look
+
+The goal here is to achieve the first look of the app.
+No need to worry about authentication yet, just the UI and TMDB API integration.
+
+- [ ] Home
