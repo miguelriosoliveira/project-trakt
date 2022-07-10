@@ -17,4 +17,4 @@
 - [ ] Setup pre-commit hooks (Husky)
 - [x] Setup Quality Gate (SonarCloud)
 - [x] Setup Quality Gate analysis on PR
-- [ ] Setup Quality Gate coverage analysis
+- [x] Setup Quality Gate coverage analysis
