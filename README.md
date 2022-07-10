@@ -7,6 +7,8 @@
 
 ## Roadmap
 
+### v0.0.1 - The Technical Foundation
+
 - [x] Deploy v0.0.1 to Vercel ("Hello World" version)
 - [x] Setup code style formatting on IDE (ESLint config)
 - [x] Setup code style formatting on PR (GitHub Actions ESLint config)
@@ -14,7 +16,7 @@
 - [x] Setup tests on PR (GitHub Actions Jest config)
 - [x] Setup SASS instead of CSS
 - [x] Setup dependency watching (Dependabot)
-- [ ] Setup pre-commit hooks (Husky)
+- [x] Setup pre-commit hooks (Husky)
 - [x] Setup Quality Gate (SonarCloud)
 - [x] Setup Quality Gate analysis on PR
 - [x] Setup Quality Gate coverage analysis
