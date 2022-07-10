@@ -25,7 +25,7 @@ The goal here is to achieve a healthy devops culture and a pleasant dev experien
 
 ###  v0.1.0 - The First Look
 
-The goal here is to achieve the first look of the app.
+The goal here is to achieve the first look of the app.<br/>
 No need to worry about authentication yet, just the UI and TMDB API integration.
 
 - [ ] Home
