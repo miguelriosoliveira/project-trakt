@@ -35,10 +35,10 @@
 		"eslint-plugin-react": "^7.30.1",
 		"eslint-plugin-react-hooks": "^4.6.0",
 		"eslint-plugin-unicorn": "^43.0.1",
+		"husky": "^8.0.1",
 		"jest": "^28.1.2",
 		"jest-environment-jsdom": "^28.1.2",
 		"prettier": "^2.7.1",
-		"typescript": "4.7.4",
-		"husky": "^7.0.0"
+		"typescript": "4.7.4"
 	}
 }
