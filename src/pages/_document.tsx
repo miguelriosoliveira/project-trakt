@@ -10,7 +10,10 @@ export default class Document extends NextDocument {
 						href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
 						rel="stylesheet"
 					/>
-					{/* <link rel="shortcut icon" href="/favicon.png" type="image/png" /> */}
+					<meta
+						name="description"
+						content="Trakt clone made with Next.js + TypeScript and the TMDB API"
+					/>
 				</Head>
 
 				<body>

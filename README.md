@@ -28,4 +28,5 @@ The goal here is to achieve a healthy devops culture and a pleasant dev experien
 The goal here is to achieve the first look of the app.<br/>
 No need to worry about authentication yet, just the UI and TMDB API integration.
 
-- [ ] Home
+- [ ] Home (mobile)
+- [ ] Home (desktop)
