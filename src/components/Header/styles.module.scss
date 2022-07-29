@@ -16,24 +16,6 @@
 		position: absolute;
 		left: 50%;
 		transform: translateX(-50%);
-		margin-top: 30px;
-		display: flex;
-
-		.bottomBg {
-			position: absolute;
-			bottom: 0.2px;
-			width: 100%;
-			height: calc(100% - 2px);
-			background: linear-gradient(to bottom, transparent 0 74.3%, var(--black-1000-400) 0 100%);
-			z-index: -1;
-			border-bottom-left-radius: 100px;
-			border-bottom-right-radius: 100px;
-
-			// transition: all 1s;
-			// &:hover {
-			// 	background: linear-gradient(to bottom, transparent 0 74.3%, var(--black-1000-100) 0 100%);
-			// }
-		}
 	}
 
 	.menus {

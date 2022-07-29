@@ -9,13 +9,14 @@ export function Header() {
 		<header className={styles.container}>
 			<FiSearch color="white" size={20} strokeWidth={3} />
 
-			<Link href="/" className={styles.logo}>
-				<Image
-					src="https://trakt.tv/assets/logos/header@2x-d6926a2c93734bee72c5813819668ad494dbbda651457cd17d15d267bc75c657.png"
-					width={50}
-					height={50}
-				/>
-				<div className={styles.bottomBg} />
+			<Link href="/">
+				<a className={styles.logo}>
+					<Image
+						src="https://trakt.tv/assets/logos/header@2x-d6926a2c93734bee72c5813819668ad494dbbda651457cd17d15d267bc75c657.png"
+						width={40}
+						height={40}
+					/>
+				</a>
 			</Link>
 
 			<div className={styles.menus}>
