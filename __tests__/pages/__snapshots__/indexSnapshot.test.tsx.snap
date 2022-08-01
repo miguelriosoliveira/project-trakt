@@ -117,6 +117,101 @@ exports[`renders homepage unchanged 1`] = `
         </span>
       </div>
     </header>
+    <main>
+      <section
+        class="userInfoWrapper"
+      >
+        <div
+          class="posterBgWrapper"
+        >
+          <div
+            class="posterBg"
+          />
+        </div>
+        <div
+          class="userInfo"
+        >
+          <h1>
+            Hello, Miguel
+          </h1>
+          <div>
+            <span>
+              MEMBER SINCE
+            </span>
+            <span>
+              29 JAN 2013 22:17
+            </span>
+          </div>
+          <div
+            class="yearToDate"
+          >
+            <svg
+              fill="none"
+              height="32"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="3"
+              viewBox="0 0 24 24"
+              width="32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line
+                x1="18"
+                x2="18"
+                y1="20"
+                y2="10"
+              />
+              <line
+                x1="12"
+                x2="12"
+                y1="20"
+                y2="4"
+              />
+              <line
+                x1="6"
+                x2="6"
+                y1="20"
+                y2="14"
+              />
+            </svg>
+            <span
+              class="year"
+            >
+              2022
+            </span>
+            <div
+              class="text"
+            >
+              <p>
+                YEAR
+              </p>
+              <p>
+                TO DATE
+              </p>
+            </div>
+            <svg
+              fill="none"
+              height="16"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="3"
+              viewBox="0 0 24 24"
+              width="16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <polyline
+                points="9 18 15 12 9 6"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          class="stats"
+        />
+      </section>
+    </main>
   </div>
 </div>
 `;
