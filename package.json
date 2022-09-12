@@ -12,34 +12,34 @@
 		"prepare": "husky install"
 	},
 	"dependencies": {
-		"next": "12.2.5",
+		"next": "12.3.0",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
-		"sass": "^1.54.8"
+		"sass": "^1.54.9"
 	},
 	"devDependencies": {
 		"@testing-library/jest-dom": "^5.16.5",
 		"@testing-library/react": "^13.4.0",
-		"@types/node": "18.7.15",
-		"@types/react": "18.0.18",
+		"@types/node": "18.7.16",
+		"@types/react": "18.0.19",
 		"@types/react-dom": "18.0.6",
-		"@typescript-eslint/eslint-plugin": "^5.36.1",
-		"@typescript-eslint/parser": "^5.36.1",
-		"eslint": "^8.23.0",
+		"@typescript-eslint/eslint-plugin": "^5.36.2",
+		"@typescript-eslint/parser": "^5.36.2",
+		"eslint": "^8.23.1",
 		"eslint-config-airbnb": "^19.0.4",
-		"eslint-config-next": "12.2.5",
+		"eslint-config-next": "12.3.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-import": "^2.26.0",
 		"eslint-plugin-jsx-a11y": "^6.6.1",
 		"eslint-plugin-prettier": "^4.2.1",
-		"eslint-plugin-react": "^7.31.6",
+		"eslint-plugin-react": "^7.31.8",
 		"eslint-plugin-react-hooks": "^4.6.0",
 		"eslint-plugin-unicorn": "^43.0.2",
 		"husky": "^8.0.1",
-		"jest": "^29.0.2",
-		"jest-environment-jsdom": "^29.0.2",
+		"jest": "^29.0.3",
+		"jest-environment-jsdom": "^29.0.3",
 		"prettier": "^2.7.1",
 		"react-icons": "^4.4.0",
-		"typescript": "4.8.2"
+		"typescript": "4.8.3"
 	}
 }
