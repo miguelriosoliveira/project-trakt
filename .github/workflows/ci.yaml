@@ -43,13 +43,3 @@ jobs:
 
       - name: Add, commit and push changed files
         uses: stefanzweifel/git-auto-commit-action@v4
-
-  pull_request_ci:
-    runs-on: ubuntu-latest
-    if: ${{ github.event_name == 'pull_request' }}
-    steps:
-      - uses: actions/checkout@v2
-      - uses: ahmadnassri/action-dependabot-auto-merge@v2
-        if: github.event_name == 'pull_request'
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
