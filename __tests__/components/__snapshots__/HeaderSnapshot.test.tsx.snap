@@ -31,22 +31,20 @@ exports[`renders Header unchanged 1`] = `
       />
     </svg>
     <a
+      class="logo"
       href="/"
     >
-      <a
-        class="logo"
-      >
-        <img
-          data-nimg="1"
-          decoding="async"
-          height="40"
-          loading="lazy"
-          src="/_next/image?url=https%3A%2F%2Ftrakt.tv%2Fassets%2Flogos%2Fheader%402x-d6926a2c93734bee72c5813819668ad494dbbda651457cd17d15d267bc75c657.png&w=96&q=75"
-          srcset="/_next/image?url=https%3A%2F%2Ftrakt.tv%2Fassets%2Flogos%2Fheader%402x-d6926a2c93734bee72c5813819668ad494dbbda651457cd17d15d267bc75c657.png&w=48&q=75 1x, /_next/image?url=https%3A%2F%2Ftrakt.tv%2Fassets%2Flogos%2Fheader%402x-d6926a2c93734bee72c5813819668ad494dbbda651457cd17d15d267bc75c657.png&w=96&q=75 2x"
-          style="color: transparent;"
-          width="40"
-        />
-      </a>
+      <img
+        alt="Trakt logo: a red circle with an inclined letter T"
+        data-nimg="1"
+        decoding="async"
+        height="40"
+        loading="lazy"
+        src="/_next/image?url=https%3A%2F%2Ftrakt.tv%2Fassets%2Flogos%2Fheader%402x-d6926a2c93734bee72c5813819668ad494dbbda651457cd17d15d267bc75c657.png&w=96&q=75"
+        srcset="/_next/image?url=https%3A%2F%2Ftrakt.tv%2Fassets%2Flogos%2Fheader%402x-d6926a2c93734bee72c5813819668ad494dbbda651457cd17d15d267bc75c657.png&w=48&q=75 1x, /_next/image?url=https%3A%2F%2Ftrakt.tv%2Fassets%2Flogos%2Fheader%402x-d6926a2c93734bee72c5813819668ad494dbbda651457cd17d15d267bc75c657.png&w=96&q=75 2x"
+        style="color: transparent;"
+        width="40"
+      />
     </a>
     <div
       class="menus"
@@ -84,6 +82,7 @@ exports[`renders Header unchanged 1`] = `
         />
       </svg>
       <img
+        alt="The user's profile picture"
         data-nimg="1"
         decoding="async"
         height="35"
