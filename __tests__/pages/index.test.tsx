@@ -5,7 +5,7 @@ import Home from '../../src/pages/index';
 describe('Home', () => {
 	it('renders a heading', async () => {
 		render(<Home />);
-		const header = screen.getByRole('banner');
+		const header = await screen.findByRole('banner');
 		expect(header).toBeInTheDocument();
 	});
 });

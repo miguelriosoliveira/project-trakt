@@ -6,7 +6,7 @@ import styles from './styles.module.scss';
 
 export function Header() {
 	return (
-		<header className={styles.container}>
+		<header data-testid="header" className={styles.container}>
 			<FiSearch color="white" size={20} strokeWidth={3} />
 
 			<Link href="/" className={styles.logo}>
