@@ -30,7 +30,7 @@ jobs:
         run: yarn install --frozen-lockfile
 
       - name: Fix auto-fixable problems
-        run: yarn lint:fix
+        run: yarn lint
 
       - name: Run tests
         run: yarn test
