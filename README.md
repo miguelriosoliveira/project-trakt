@@ -16,7 +16,6 @@ The goal here is to achieve a healthy devops culture and a pleasant dev experien
 - [x] Setup code style formatting on PR (GitHub Actions ESLint config)
 - [x] Setup tests (Jest)
 - [x] Setup tests on PR (GitHub Actions Jest config)
-- [x] Setup SASS instead of CSS
 - [x] Setup dependency watching (Dependabot)
 - [x] Setup pre-commit hooks (Husky)
 - [x] Setup Quality Gate (SonarCloud)
