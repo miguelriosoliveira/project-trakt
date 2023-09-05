@@ -8,7 +8,7 @@
 		"start": "next start",
 		"lint": "next lint --fix",
 		"test": "jest --runInBand",
-		"test:cov": "yarn test --coverage",
+		"test:cov": "jest --runInBand --coverage",
 		"postinstall": "husky install"
 	},
 	"dependencies": {
