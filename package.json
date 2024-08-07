@@ -9,7 +9,6 @@
 		"lint": "eslint --fix",
 		"test": "jest --runInBand",
 		"test:cov": "jest --runInBand --coverage",
-		"postinstall": "husky install",
 		"prepare": "husky"
 	},
 	"dependencies": {
