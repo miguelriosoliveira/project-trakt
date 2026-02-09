@@ -2,7 +2,7 @@
 	"name": "project-trakt",
 	"version": "0.1.0",
 	"private": true,
-	"packageManager": "pnpm@10.28.2",
+	"packageManager": "pnpm@10.29.2",
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
@@ -19,13 +19,13 @@
 		"react-icons": "^5.5.0"
 	},
 	"devDependencies": {
-		"@eslint/js": "^9.39.2",
+		"@eslint/js": "^10.0.1",
 		"@next/eslint-plugin-next": "^16.1.6",
 		"@tailwindcss/postcss": "^4.1.18",
 		"@testing-library/jest-dom": "^6.9.1",
 		"@testing-library/react": "^16.3.2",
-		"@types/node": "^25.2.0",
-		"@types/react": "^19.2.10",
+		"@types/node": "^25.2.2",
+		"@types/react": "^19.2.13",
 		"@types/react-dom": "^19.2.3",
 		"@vitest/coverage-v8": "^4.0.18",
 		"eslint": "8",
