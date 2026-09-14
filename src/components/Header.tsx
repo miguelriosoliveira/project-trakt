@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { FiSearch, FiMenu } from 'react-icons/fi';
+import { FiMenu, FiSearch } from 'react-icons/fi';
 
 export function Header() {
 	return (

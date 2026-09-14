@@ -22,6 +22,11 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v6
 
+      - name: Setup Node
+        uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+
       - name: Get pnpm store directory
         shell: bash
         run: |
@@ -41,8 +46,14 @@ jobs:
       - name: Fix auto-fixable problems
         run: pnpm lint
 
+      - name: Typecheck
+        run: pnpm typecheck
+
       - name: Run tests
         run: pnpm test
+
+      - name: Build
+        run: pnpm build
 
       - name: Cache Sonar Scanner
         uses: actions/cache@v6.1.0

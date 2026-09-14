@@ -1,5 +1,5 @@
-import { Header } from '@/components';
 import { render, screen } from '@testing-library/react';
+import { Header } from '@/components';
 
 describe('Header', () => {
 	it('renders a a header', async () => {
