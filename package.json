@@ -2,7 +2,7 @@
 	"name": "project-trakt",
 	"version": "0.1.0",
 	"private": true,
-	"packageManager": "pnpm@12.4.1",
+	"packageManager": "pnpm@12.5.1",
 	"engines": {
 		"node": ">=24"
 	},
@@ -23,7 +23,7 @@
 		"react-icons": "^5.7.0"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "2.5.13",
+		"@biomejs/biome": "2.5.14",
 		"@miguelriosoliveira/shared-configs": "github:miguelriosoliveira/shared-configs",
 		"@tailwindcss/postcss": "^4.3.3",
 		"@testing-library/jest-dom": "^7.0.1",
