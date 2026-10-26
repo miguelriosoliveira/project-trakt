@@ -22,7 +22,7 @@ The goal here is to achieve a healthy devops culture and a pleasant dev experien
 - [x] Setup Quality Gate analysis on PR
 - [x] Setup Quality Gate coverage analysis
 
-###  v0.1.0 - The First Look
+### v0.1.0 - The First Look
 
 The goal here is to achieve the first look of the app.<br/>
 No need to worry about authentication yet, just the UI and TMDB API integration.
