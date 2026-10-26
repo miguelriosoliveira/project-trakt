@@ -17,7 +17,6 @@ jobs:
         uses: actions/checkout@v7
         with:
           fetch-depth: 0
-          token: ${{ secrets.GH_TOKEN }}
 
       - name: Install pnpm
         uses: pnpm/action-setup@v6
@@ -43,8 +42,8 @@ jobs:
       - name: Install dependencies
         run: pnpm i --frozen-lockfile
 
-      - name: Fix auto-fixable problems
-        run: pnpm lint
+      - name: Lint
+        run: pnpm lint:check
 
       - name: Typecheck
         run: pnpm typecheck
@@ -74,6 +73,3 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-
-      - name: Add, commit and push changed files
-        uses: stefanzweifel/git-auto-commit-action@v7

@@ -11,6 +11,7 @@
 		"build": "next build",
 		"start": "next start",
 		"lint": "biome check --write",
+		"lint:check": "biome check",
 		"typecheck": "next typegen && tsc --noEmit",
 		"test": "jest --runInBand",
 		"test:cov": "jest --runInBand --coverage",
