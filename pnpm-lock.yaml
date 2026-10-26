@@ -184,7 +184,7 @@ importers:
         version: 2.6.3
       '@miguelriosoliveira/shared-configs':
         specifier: github:miguelriosoliveira/shared-configs
-        version: https://codeload.github.com/miguelriosoliveira/shared-configs/tar.gz/edb44f2dd35eb814ed14b681d676d6e020f02c52
+        version: https://codeload.github.com/miguelriosoliveira/shared-configs/tar.gz/0706543821561f8e3d27b67bb0a26630f9455a2e
       '@tailwindcss/postcss':
         specifier: ^4.3.3
         version: 4.3.3
@@ -808,8 +808,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@miguelriosoliveira/shared-configs@https://codeload.github.com/miguelriosoliveira/shared-configs/tar.gz/edb44f2dd35eb814ed14b681d676d6e020f02c52':
-    resolution: {gitHosted: true, integrity: sha512-f8wPVNNZEYBMLvlYsR0MSD0dhVKpf8WOJp+cKNbR1zfvkWZT4M0QGD3YyiaH7gatbj/Kj79FK1eXG1W6vJH4zQ==, tarball: https://codeload.github.com/miguelriosoliveira/shared-configs/tar.gz/edb44f2dd35eb814ed14b681d676d6e020f02c52}
+  '@miguelriosoliveira/shared-configs@https://codeload.github.com/miguelriosoliveira/shared-configs/tar.gz/0706543821561f8e3d27b67bb0a26630f9455a2e':
+    resolution: {gitHosted: true, integrity: sha512-wwyKsWNwHmfXYFNOugDQmm8UqfFe/p5gA/jEAuiYMP8SHQffLeQfHBYgL+1EH5HFGrDkUkd6wBYqVAQAnAYxMw==, tarball: https://codeload.github.com/miguelriosoliveira/shared-configs/tar.gz/0706543821561f8e3d27b67bb0a26630f9455a2e}
     version: 0.1.0
 
   '@napi-rs/wasm-runtime@1.2.5':
@@ -3546,7 +3546,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.6.0
 
-  '@miguelriosoliveira/shared-configs@https://codeload.github.com/miguelriosoliveira/shared-configs/tar.gz/edb44f2dd35eb814ed14b681d676d6e020f02c52': {}
+  '@miguelriosoliveira/shared-configs@https://codeload.github.com/miguelriosoliveira/shared-configs/tar.gz/0706543821561f8e3d27b67bb0a26630f9455a2e': {}
 
   '@napi-rs/wasm-runtime@1.2.5(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)':
     dependencies:
