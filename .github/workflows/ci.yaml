@@ -51,6 +51,33 @@ jobs:
       - name: Run tests
         run: pnpm test
 
+      - name: Upload coverage report
+        uses: actions/upload-artifact@v7.0.2
+        with:
+          name: coverage
+          path: coverage/lcov.info
+          if-no-files-found: error
+
+      - name: Check Coveralls token
+        id: coveralls-token
+        env:
+          COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
+        run: |
+          if [ -n "$COVERALLS_REPO_TOKEN" ]; then
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "enabled=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Upload coverage to Coveralls
+        if: steps.coveralls-token.outputs.enabled == 'true'
+        uses: coverallsapp/github-action@v2.3.8
+        with:
+          # This action assigns github-token to COVERALLS_REPO_TOKEN.
+          github-token: ${{ secrets.COVERALLS_REPO_TOKEN }}
+          file: coverage/lcov.info
+          format: lcov
+
       - name: Build
         run: pnpm build
 
