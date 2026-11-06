@@ -13,8 +13,9 @@
 		"lint": "biome check --write",
 		"lint:check": "biome check",
 		"typecheck": "next typegen && tsc --noEmit",
-		"test": "vitest run --coverage",
+		"test": "vitest run",
 		"test:cov": "vitest run --coverage",
+		"test:watch": "vitest",
 		"prepare": "husky"
 	},
 	"dependencies": {

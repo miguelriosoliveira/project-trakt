@@ -49,7 +49,7 @@ jobs:
         run: pnpm typecheck
 
       - name: Run tests
-        run: pnpm test
+        run: pnpm test:cov
 
       - name: Upload coverage report
         uses: actions/upload-artifact@v7.0.2
