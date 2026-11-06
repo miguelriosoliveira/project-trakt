@@ -2,7 +2,7 @@
 	"name": "project-trakt",
 	"version": "0.1.0",
 	"private": true,
-	"packageManager": "pnpm@12.16.1",
+	"packageManager": "pnpm@12.18.0",
 	"engines": {
 		"node": ">=26.13.0"
 	},
@@ -18,28 +18,28 @@
 		"prepare": "husky"
 	},
 	"dependencies": {
-		"next": "16.4.3",
+		"next": "16.4.5",
 		"react": "19.3.1",
 		"react-dom": "19.3.1",
 		"react-icons": "^5.7.0"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "2.6.4",
+		"@biomejs/biome": "2.6.5",
 		"@miguelriosoliveira/shared-configs": "github:miguelriosoliveira/shared-configs",
-		"@tailwindcss/postcss": "^4.3.3",
+		"@tailwindcss/postcss": "^4.3.4",
 		"@testing-library/jest-dom": "^7.0.1",
 		"@testing-library/react": "^16.3.3",
 		"@types/jest": "^30.0.0",
 		"@types/node": "^26.6.6",
 		"@types/react": "^19.3.0",
 		"@types/react-dom": "^19.3.0",
-		"@vitest/coverage-v8": "^5.0.5",
+		"@vitest/coverage-v8": "^5.1.0",
 		"husky": "^9.1.7",
 		"jest": "^30.5.2",
 		"jest-environment-jsdom": "^30.5.2",
 		"lint-staged": "^17.6.0",
 		"postcss": "^8.5.32",
-		"tailwindcss": "^4.3.3",
+		"tailwindcss": "^4.3.4",
 		"typescript": "^7.0.2"
 	}
 }
