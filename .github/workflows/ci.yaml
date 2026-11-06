@@ -63,13 +63,15 @@ jobs:
       - name: Cache Sonar cache
         uses: actions/cache@v6.1.0
         with:
-          path: ~/.sonar/cache
+          path: .sonar/cache
           key: sonar-cache-${{ runner.os }}-${{ hashFiles('sonar-project.properties') }}
           restore-keys: |
             sonar-cache-${{ runner.os }}-
 
       - name: SonarQube Scan
-        uses: SonarSource/sonarqube-scan-action@master
+        uses: SonarSource/sonarqube-scan-action@v8.4.1
+        with:
+          args: -Dsonar.qualitygate.wait=true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
