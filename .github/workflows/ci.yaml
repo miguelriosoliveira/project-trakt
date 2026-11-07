@@ -72,7 +72,7 @@ jobs:
         uses: actions/cache@v6.1.0
         with:
           path: /opt/hostedtoolcache/sonar-scanner-cli
-          key: sonar-scanner-cli-${{ runner.os }}-${{ hashFiles('.github/workflows/ci.yaml') }}
+          key: sonar-scanner-cli-${{ runner.os }}-${{ hashFiles('.github/workflows/**') }}
 
       - name: Cache Sonar cache
         uses: actions/cache@v6.1.0
