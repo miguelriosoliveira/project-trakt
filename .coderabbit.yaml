@@ -1,9 +1,10 @@
 language: en-US
 reviews:
-  poem: false
+  poem: true
   high_level_summary: true
   auto_review:
     enabled: true
+    auto_incremental_review: true
     drafts: false
   path_filters:
     - '!pnpm-lock.yaml'
