@@ -1,5 +1,7 @@
 import { FiBarChart2, FiChevronRight } from 'react-icons/fi';
 
+import { formatMemberSince, memberSince, yearToDatePlays } from '@/profile/memberSince';
+
 export default function Home() {
 	return (
 		<main>
@@ -13,12 +15,12 @@ export default function Home() {
 
 					<div>
 						<span>MEMBER SINCE</span>
-						<span>29 JAN 2013 22:17</span>
+						<span>{formatMemberSince(memberSince)}</span>
 					</div>
 
 					<div className="grid grid-flow-col gap-2 items-center w-fit">
 						<FiBarChart2 size={32} strokeWidth={3} />
-						<span className="text-3xl font-semibold">2022</span>
+						<span className="text-3xl font-semibold">{yearToDatePlays}</span>
 						<div className="text-xs font-semibold">
 							<p>YEAR</p>
 							<p>TO DATE</p>
