@@ -1,5 +1,6 @@
 import { fileURLToPath } from 'node:url';
 
+import { coverage } from '@miguelriosoliveira/shared-configs/vitest/react';
 import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vitest/config';
 
@@ -15,16 +16,6 @@ export default defineConfig({
 	test: {
 		environment: 'jsdom',
 		setupFiles: ['./vitest.setup.ts'],
-		coverage: {
-			provider: 'v8',
-			reporter: ['text', 'lcov'],
-			include: ['src/**/*.{ts,tsx}'],
-			thresholds: {
-				branches: 100,
-				functions: 100,
-				lines: 100,
-				statements: 100,
-			},
-		},
+		coverage,
 	},
 });

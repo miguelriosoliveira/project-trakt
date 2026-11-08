@@ -6,97 +6,11 @@ on:
   pull_request:
     branches: ['main']
 
+permissions:
+  contents: read
+  security-events: write
+
 jobs:
   ci:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      security-events: write
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v7
-        with:
-          fetch-depth: 0
-
-      - name: Install pnpm
-        uses: pnpm/action-setup@v6
-
-      - name: Setup Node
-        uses: actions/setup-node@v7
-        with:
-          node-version-file: .nvmrc
-
-      - name: Get pnpm store directory
-        shell: bash
-        run: |
-          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
-
-      - name: Setup pnpm cache
-        uses: actions/cache@v6.1.0
-        with:
-          path: ${{ env.STORE_PATH }}
-          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-store-
-
-      - name: Install dependencies
-        run: pnpm i --frozen-lockfile
-
-      - name: Lint
-        run: pnpm lint:check
-
-      - name: Typecheck
-        run: pnpm typecheck
-
-      - name: Run tests
-        run: pnpm test:cov
-
-      - name: Upload coverage report
-        uses: actions/upload-artifact@v7.0.2
-        with:
-          name: coverage
-          path: coverage/lcov.info
-          if-no-files-found: error
-
-      - name: Upload coverage to Coveralls
-        uses: coverallsapp/github-action@v2.3.8
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          file: coverage/lcov.info
-          format: lcov
-
-      - name: Restore Stryker incremental cache
-        uses: actions/cache@v6.1.0
-        with:
-          path: reports
-          key: stryker-incremental-${{ runner.os }}-${{ github.sha }}
-          restore-keys: |
-            stryker-incremental-${{ runner.os }}-
-
-      - name: Run mutations
-        run: pnpm test:mutation
-
-      - name: Build
-        run: pnpm build
-
-      - name: Cache Sonar Scanner
-        uses: actions/cache@v6.1.0
-        with:
-          path: /opt/hostedtoolcache/sonar-scanner-cli
-          key: sonar-scanner-cli-${{ runner.os }}-${{ hashFiles('.github/workflows/**') }}
-
-      - name: Cache Sonar cache
-        uses: actions/cache@v6.1.0
-        with:
-          path: .sonar/cache
-          key: sonar-cache-${{ runner.os }}-${{ hashFiles('sonar-project.properties') }}
-          restore-keys: |
-            sonar-cache-${{ runner.os }}-
-
-      - name: SonarQube Scan
-        uses: SonarSource/sonarqube-scan-action@v8.4.1
-        with:
-          args: -Dsonar.qualitygate.wait=true
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Needed to get PR information, if any
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+    uses: miguelriosoliveira/shared-configs/.github/workflows/ci.yaml@v1
+    secrets: inherit

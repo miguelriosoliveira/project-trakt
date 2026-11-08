@@ -184,7 +184,7 @@ importers:
         version: 2.6.5
       '@miguelriosoliveira/shared-configs':
         specifier: github:miguelriosoliveira/shared-configs
-        version: https://codeload.github.com/miguelriosoliveira/shared-configs/tar.gz/51606b5be9588dcaf032519ca85095489fd2979f
+        version: https://codeload.github.com/miguelriosoliveira/shared-configs/tar.gz/f705a503bf5d5b909208ccc06e6d7f84fbe2ac7c
       '@stryker-mutator/core':
         specifier: ^10.1.1
         version: 10.1.1(@types/node@26.6.6)
@@ -869,8 +869,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@miguelriosoliveira/shared-configs@https://codeload.github.com/miguelriosoliveira/shared-configs/tar.gz/51606b5be9588dcaf032519ca85095489fd2979f':
-    resolution: {gitHosted: true, integrity: sha512-BiHTQ401SshpaxIu0/j2McnpuLt4YuXXVIIcW2EMWU9MStQbuB2kLfAecyh5zpsWtvp1TOT7p+UOHrNlDXChFg==, tarball: https://codeload.github.com/miguelriosoliveira/shared-configs/tar.gz/51606b5be9588dcaf032519ca85095489fd2979f}
+  '@miguelriosoliveira/shared-configs@https://codeload.github.com/miguelriosoliveira/shared-configs/tar.gz/f705a503bf5d5b909208ccc06e6d7f84fbe2ac7c':
+    resolution: {gitHosted: true, integrity: sha512-n7hcpPiDn7xy/pVqdCmcO37EwDrXzVK4RqLVsJB9HcClQvzy1bcHNBnKSsiAqyuBbPWxIdCfLVbyYFuvmYKTKQ==, tarball: https://codeload.github.com/miguelriosoliveira/shared-configs/tar.gz/f705a503bf5d5b909208ccc06e6d7f84fbe2ac7c}
     version: 0.1.0
 
   '@next/env@16.4.5':
@@ -2861,7 +2861,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.6.0
 
-  '@miguelriosoliveira/shared-configs@https://codeload.github.com/miguelriosoliveira/shared-configs/tar.gz/51606b5be9588dcaf032519ca85095489fd2979f': {}
+  '@miguelriosoliveira/shared-configs@https://codeload.github.com/miguelriosoliveira/shared-configs/tar.gz/f705a503bf5d5b909208ccc06e6d7f84fbe2ac7c': {}
 
   '@next/env@16.4.5': {}
 
