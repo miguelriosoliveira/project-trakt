@@ -7,7 +7,7 @@ export default function Home() {
 		<main>
 			<section className="text-white relative bg-black">
 				<div className="absolute left-0 top-0 w-full h-full">
-					<div className="absolute left-0 top-0 w-full h-full bg-[url('/assets/poster-bg.webp')] bg-[length:240px] opacity-30 blur-sm" />
+					<div className="absolute left-0 top-0 w-full h-full bg-[url('/assets/poster-bg.webp')] bg-size-[240px] opacity-30 blur-sm" />
 				</div>
 
 				<div className="styles.userInfo">

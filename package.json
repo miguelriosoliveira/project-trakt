@@ -10,8 +10,8 @@
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
-		"lint": "biome check --write",
-		"lint:check": "biome check",
+		"lint": "biome check --write && tailwint --fix",
+		"lint:check": "biome check && tailwint",
 		"typecheck": "next typegen && tsc --noEmit",
 		"test": "vitest run",
 		"test:cov": "vitest run --coverage",
@@ -30,6 +30,7 @@
 		"@miguelriosoliveira/shared-configs": "github:miguelriosoliveira/shared-configs",
 		"@stryker-mutator/core": "^10.1.1",
 		"@stryker-mutator/vitest-runner": "^10.1.1",
+		"@tailwindcss/language-server": "^0.16.0",
 		"@tailwindcss/postcss": "^4.3.4",
 		"@testing-library/jest-dom": "^7.0.1",
 		"@testing-library/react": "^16.3.3",
@@ -43,6 +44,7 @@
 		"lint-staged": "^17.6.0",
 		"postcss": "^8.5.32",
 		"tailwindcss": "^4.3.4",
+		"tailwint": "^1.1.16",
 		"typescript": "^7.0.2",
 		"vitest": "^5.1.0"
 	}

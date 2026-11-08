@@ -1,3 +1,7 @@
 {
-	"*": "biome check --write --no-errors-on-unmatched --files-ignore-unknown=true"
+	"*.{tsx,jsx,html,css}": [
+		"tailwint --fix",
+		"biome check --write --no-errors-on-unmatched --files-ignore-unknown=true"
+	],
+	"!*.{tsx,jsx,html,css}": "biome check --write --no-errors-on-unmatched --files-ignore-unknown=true"
 }
