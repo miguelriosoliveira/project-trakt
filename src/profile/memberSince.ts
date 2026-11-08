@@ -1,28 +1,21 @@
-const months = [
-	'JAN',
-	'FEB',
-	'MAR',
-	'APR',
-	'MAY',
-	'JUN',
-	'JUL',
-	'AUG',
-	'SEP',
-	'OCT',
-	'NOV',
-	'DEC',
-] as const;
+const memberSinceFormat = new Intl.DateTimeFormat('en-GB', {
+	timeZone: 'UTC',
+	day: '2-digit',
+	month: 'short',
+	year: 'numeric',
+	hour: '2-digit',
+	minute: '2-digit',
+	hourCycle: 'h23',
+});
 
 export const memberSince = new Date(Date.UTC(2013, 0, 29, 22, 17));
 
 export const yearToDatePlays = 2022;
 
 export function formatMemberSince(date: Date): string {
-	const day = String(date.getUTCDate()).padStart(2, '0');
-	const month = months[date.getUTCMonth()];
-	const year = String(date.getUTCFullYear());
-	const hours = String(date.getUTCHours()).padStart(2, '0');
-	const minutes = String(date.getUTCMinutes()).padStart(2, '0');
+	const parts: Record<string, string> = Object.fromEntries(
+		memberSinceFormat.formatToParts(date).map(part => [part.type, part.value]),
+	);
 
-	return `${day} ${month} ${year} ${hours}:${minutes}`;
+	return `${parts.day} ${parts.month.toUpperCase()} ${parts.year} ${parts.hour}:${parts.minute}`;
 }
