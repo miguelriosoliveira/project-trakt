@@ -16,6 +16,7 @@
 		"test": "vitest run",
 		"test:cov": "vitest run --coverage",
 		"test:watch": "vitest",
+		"test:mutation": "stryker run",
 		"prepare": "husky"
 	},
 	"dependencies": {
@@ -27,6 +28,8 @@
 	"devDependencies": {
 		"@biomejs/biome": "2.6.5",
 		"@miguelriosoliveira/shared-configs": "github:miguelriosoliveira/shared-configs",
+		"@stryker-mutator/core": "^10.1.1",
+		"@stryker-mutator/vitest-runner": "^10.1.1",
 		"@tailwindcss/postcss": "^4.3.4",
 		"@testing-library/jest-dom": "^7.0.1",
 		"@testing-library/react": "^16.3.3",

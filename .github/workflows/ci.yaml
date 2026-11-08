@@ -65,6 +65,17 @@ jobs:
           file: coverage/lcov.info
           format: lcov
 
+      - name: Restore Stryker incremental cache
+        uses: actions/cache@v6.1.0
+        with:
+          path: reports
+          key: stryker-incremental-${{ runner.os }}-${{ github.sha }}
+          restore-keys: |
+            stryker-incremental-${{ runner.os }}-
+
+      - name: Run mutations
+        run: pnpm test:mutation
+
       - name: Build
         run: pnpm build
 
