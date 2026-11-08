@@ -1,0 +1,10 @@
+{
+	"strictness": 2,
+	"commentTypes": ["logic", "syntax", "style"],
+	"autoReview": ["open", "push"],
+	"ignorePatterns": "pnpm-lock.yaml\ncoverage/**\nreports/**\n.stryker-tmp/**",
+	"instructions": "TypeScript Next.js app. Tests live in __tests__. Line coverage and the Stryker score both have to stay at 100. Comment on behavior and types, and skip formatting that Biome already enforces.",
+	"context": {
+		"repos": ["miguelriosoliveira/shared-configs"]
+	}
+}

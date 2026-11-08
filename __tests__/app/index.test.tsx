@@ -6,7 +6,8 @@ import Home from '@/app/page';
 describe('Home', () => {
 	it('renders a heading', async () => {
 		render(<Home />);
-		const h1 = await screen.findByText('Hello, Miguel');
-		expect(h1).toBeInTheDocument();
+		expect(await screen.findByText('Hello, Miguel')).toBeInTheDocument();
+		expect(screen.getByText('29 JAN 2013 22:17')).toBeInTheDocument();
+		expect(screen.getByText('2022')).toBeInTheDocument();
 	});
 });

@@ -1,0 +1,17 @@
+language: en-US
+reviews:
+  poem: true
+  high_level_summary: true
+  auto_review:
+    enabled: true
+    auto_incremental_review: true
+    drafts: false
+  path_filters:
+    - '!pnpm-lock.yaml'
+    - '!coverage/**'
+    - '!reports/**'
+  path_instructions:
+    - path: 'src/**/*.{ts,tsx}'
+      instructions: >
+        Tests live in __tests__. Line coverage and the Stryker score both
+        have to stay at 100. Comment when a change can drop either gate.
