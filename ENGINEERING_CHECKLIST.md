@@ -5,6 +5,17 @@ item against the needs of this project and future projects. Some CI changes belo
 [shared-configs](https://github.com/miguelriosoliveira/shared-configs), which owns the reusable
 workflow.
 
+## Already in place
+
+- [x] Biome formatting and lint checks run in CI.
+- [x] TypeScript typechecking runs in CI.
+- [x] Vitest tests run with coverage in CI.
+- [x] Stryker mutation testing runs in CI.
+- [x] Production builds and the SonarCloud quality gate run in CI.
+- [x] CodeQL analysis is configured for JavaScript/TypeScript and GitHub Actions.
+- [x] Renovate manages dependency updates.
+- [x] Husky runs pre-commit checks.
+
 ## 1. Enforce quality gates
 
 - [ ] Protect `main` with branch protection or a ruleset that requires pull requests and passing CI.
@@ -14,7 +25,7 @@ workflow.
 
 ## 2. Supply-chain security
 
-- [ ] Review the existing CodeQL configuration and require successful analysis before merging.
+- [ ] Require successful CodeQL analysis before merging.
 - [ ] Add dependency review to pull requests.
 - [ ] Evaluate OpenSSF Scorecard.
 - [ ] Evaluate `harden-runner` for GitHub Actions.
