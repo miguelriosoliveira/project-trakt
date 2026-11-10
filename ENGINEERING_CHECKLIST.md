@@ -14,7 +14,7 @@ workflow.
 
 ## 2. Supply-chain security
 
-- [ ] Add CodeQL or equivalent static security analysis.
+- [ ] Review the existing CodeQL configuration and require successful analysis before merging.
 - [ ] Add dependency review to pull requests.
 - [ ] Evaluate OpenSSF Scorecard.
 - [ ] Evaluate `harden-runner` for GitHub Actions.
@@ -34,14 +34,14 @@ workflow.
 - [ ] Add workflow concurrency with cancel-in-progress.
 - [ ] Set job timeouts.
 - [ ] Decide whether both Coveralls and Sonar coverage reporting are needed, preserving the quality
-      gate if either is removed.
+  gate if either is removed.
 - [ ] Keep `lint-staged` in pre-commit and move typechecking, coverage, and build checks to pre-push.
 
 ## 5. Code hygiene
 
 - [ ] Add Knip to find unused files, exports, and dependencies.
 - [ ] Validate environment variables where they are consumed, using a tool such as Zod or
-      `@t3-oss/env-nextjs`.
+  `@t3-oss/env-nextjs`.
 
 ## 6. Commits and releases
 
