@@ -18,14 +18,14 @@ workflow.
 
 ## 1. Enforce quality gates
 
-- [ ] Protect `main` with branch protection or a ruleset that requires pull requests and passing CI.
+- [x] Protect `main` with branch protection or a ruleset that requires pull requests and passing CI.
 - [ ] Adopt a merge policy, such as squash-only merges, and automatically delete merged branches.
 - [ ] Enable secret-scanning push protection where available.
 - [ ] Verify Dependabot security alerts and coordinate security updates with Renovate.
 
 ## 2. Supply-chain security
 
-- [ ] Require successful CodeQL analysis before merging.
+- [x] Require successful CodeQL analysis before merging.
 - [ ] Add dependency review to pull requests.
 - [ ] Evaluate OpenSSF Scorecard.
 - [ ] Evaluate `harden-runner` for GitHub Actions.
