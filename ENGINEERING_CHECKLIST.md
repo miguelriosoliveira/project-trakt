@@ -1,0 +1,66 @@
+# Engineering quality checklist
+
+Follow-up items from the engineering practices review, roughly ordered by priority. Evaluate each
+item against the needs of this project and future projects. Some CI changes belong in
+[shared-configs](https://github.com/miguelriosoliveira/shared-configs), which owns the reusable
+workflow.
+
+## 1. Enforce quality gates
+
+- [ ] Protect `main` with branch protection or a ruleset that requires pull requests and passing CI.
+- [ ] Adopt a merge policy, such as squash-only merges, and automatically delete merged branches.
+- [ ] Enable secret-scanning push protection where available.
+- [ ] Verify Dependabot security alerts and coordinate security updates with Renovate.
+
+## 2. Supply-chain security
+
+- [ ] Add CodeQL or equivalent static security analysis.
+- [ ] Add dependency review to pull requests.
+- [ ] Evaluate OpenSSF Scorecard.
+- [ ] Evaluate `harden-runner` for GitHub Actions.
+- [ ] Pin GitHub Actions and reusable workflows to full commit SHAs, with Renovate updates.
+- [ ] Add `pnpm audit` to CI with an actionable severity and exception policy.
+
+## 3. Test layers and user experience
+
+- [ ] Add Playwright end-to-end coverage for critical flows against Vercel preview deployments.
+- [ ] Add automated accessibility checks with axe.
+- [ ] Add Lighthouse CI and define performance budgets.
+- [ ] Add a bundle-size budget, for example with `size-limit`.
+
+## 4. CI and local feedback
+
+- [ ] Split the sequential CI workflow into parallel lint, typecheck, test, mutation, and build jobs.
+- [ ] Add workflow concurrency with cancel-in-progress.
+- [ ] Set job timeouts.
+- [ ] Decide whether both Coveralls and Sonar coverage reporting are needed, preserving the quality
+      gate if either is removed.
+- [ ] Keep `lint-staged` in pre-commit and move typechecking, coverage, and build checks to pre-push.
+
+## 5. Code hygiene
+
+- [ ] Add Knip to find unused files, exports, and dependencies.
+- [ ] Validate environment variables where they are consumed, using a tool such as Zod or
+      `@t3-oss/env-nextjs`.
+
+## 6. Commits and releases
+
+- [ ] Enforce Conventional Commits with commitlint and validate pull request titles.
+- [ ] Evaluate release-please or Changesets for automated versioning and changelogs.
+
+## 7. Repository documentation and templates
+
+- [ ] Choose and add a license.
+- [ ] Add `CONTRIBUTING.md`.
+- [ ] Add `SECURITY.md`.
+- [ ] Add `CODEOWNERS`.
+- [ ] Add a pull request template.
+- [ ] Add issue templates.
+- [ ] Record significant decisions in an ADR directory.
+- [ ] Document setup and scripts in the README.
+- [ ] Add a CI badge.
+- [ ] Add a mutation-score badge where supported.
+
+## 8. Reuse across projects
+
+- [ ] Choose between a GitHub template repository and a `create-*` scaffolder in shared-configs.
