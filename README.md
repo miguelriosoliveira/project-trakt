@@ -3,29 +3,45 @@
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=miguelriosoliveira_project-trakt&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=miguelriosoliveira_project-trakt)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=miguelriosoliveira_project-trakt&metric=coverage)](https://sonarcloud.io/summary/new_code?id=miguelriosoliveira_project-trakt)
 
-[Trakt](https://trakt.tv/) clone made with [Next.js](https://nextjs.org/) + [TypeScript](https://www.typescriptlang.org/) and the [TMDB](https://www.themoviedb.org/) API.
+A work-in-progress [Trakt](https://trakt.tv/) clone built with
+[Next.js](https://nextjs.org/), React, TypeScript, and Tailwind CSS. The project explores a film and
+TV tracking experience while building a reusable foundation for engineering practices and CI.
 
-## Roadmap
+The current app is a prototype home page with sample profile and viewing data. Integration with
+[TMDB](https://www.themoviedb.org/) and authentication are not implemented yet.
 
-### v0.0.1 - The Technical Foundation
+## Getting started
 
-The goal here is to achieve a healthy devops culture and a pleasant dev experience for the project.
+Use the Node.js version in `.nvmrc` and the pnpm version specified in `package.json`.
 
-- [x] Deploy v0.0.1 to Vercel ("Hello World" version)
-- [x] Setup code style formatting on IDE (Biome config)
-- [x] Setup code style formatting on PR (GitHub Actions Biome config)
-- [x] Setup tests (Vitest)
-- [x] Setup tests on PR (GitHub Actions Vitest config)
-- [x] Setup dependency watching (Renovate)
-- [x] Setup pre-commit hooks (Husky)
-- [x] Setup Quality Gate (SonarCloud)
-- [x] Setup Quality Gate analysis on PR
-- [x] Setup Quality Gate coverage analysis
+```bash
+pnpm install --frozen-lockfile
+cp .env.example .env.local
+pnpm dev
+```
 
-### v0.1.0 - The First Look
+Open [http://localhost:3000](http://localhost:3000). The Sentry variables in `.env.example` are
+optional for local development; configure them to enable error reporting and build uploads. Keep
+`SENTRY_AUTH_TOKEN` private.
 
-The goal here is to achieve the first look of the app.<br/>
-No need to worry about authentication yet, just the UI and TMDB API integration.
+## Commands
 
-- [ ] Home (mobile)
-- [ ] Home (desktop)
+| Command              | Purpose                                                 |
+| -------------------- | ------------------------------------------------------- |
+| `pnpm dev`           | Start the development server.                           |
+| `pnpm build`         | Create a production build.                              |
+| `pnpm start`         | Serve the production build.                             |
+| `pnpm lint`          | Apply Biome and tailwint fixes.                         |
+| `pnpm lint:check`    | Check formatting and lint rules without changing files. |
+| `pnpm typecheck`     | Generate Next.js types and check TypeScript.            |
+| `pnpm test`          | Run the Vitest suite.                                   |
+| `pnpm test:cov`      | Run tests with coverage.                                |
+| `pnpm test:watch`    | Run tests in watch mode.                                |
+| `pnpm test:mutation` | Run Stryker mutation tests.                             |
+
+## Quality and observability
+
+GitHub Actions uses the reusable workflow in
+[shared-configs](https://github.com/miguelriosoliveira/shared-configs) to run linting, typechecking,
+coverage, mutation tests, a production build, and the Sonar quality gate. Renovate manages dependency
+updates, Husky runs pre-commit checks, and Sentry is configured for error monitoring.
