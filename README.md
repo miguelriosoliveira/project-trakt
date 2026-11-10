@@ -26,18 +26,18 @@ optional for local development; configure them to enable error reporting and bui
 
 ## Commands
 
-| Command | Purpose |
-| --- | --- |
-| `pnpm dev` | Start the development server. |
-| `pnpm build` | Create a production build. |
-| `pnpm start` | Serve the production build. |
-| `pnpm lint` | Apply Biome and tailwint fixes. |
-| `pnpm lint:check` | Check formatting and lint rules without changing files. |
-| `pnpm typecheck` | Generate Next.js types and check TypeScript. |
-| `pnpm test` | Run the Vitest suite. |
-| `pnpm test:cov` | Run tests with coverage. |
-| `pnpm test:watch` | Run tests in watch mode. |
-| `pnpm test:mutation` | Run Stryker mutation tests. |
+| Command              | Purpose                                                 |
+| -------------------- | ------------------------------------------------------- |
+| `pnpm dev`           | Start the development server.                           |
+| `pnpm build`         | Create a production build.                              |
+| `pnpm start`         | Serve the production build.                             |
+| `pnpm lint`          | Apply Biome and tailwint fixes.                         |
+| `pnpm lint:check`    | Check formatting and lint rules without changing files. |
+| `pnpm typecheck`     | Generate Next.js types and check TypeScript.            |
+| `pnpm test`          | Run the Vitest suite.                                   |
+| `pnpm test:cov`      | Run tests with coverage.                                |
+| `pnpm test:watch`    | Run tests in watch mode.                                |
+| `pnpm test:mutation` | Run Stryker mutation tests.                             |
 
 ## Quality and observability
 
