@@ -19,9 +19,11 @@ workflow.
 ## 1. Enforce quality gates
 
 - [x] Protect `main` with branch protection or a ruleset that requires pull requests and passing CI.
-- [ ] Adopt a merge policy, such as squash-only merges, and automatically delete merged branches.
-- [ ] Enable secret-scanning push protection where available.
-- [ ] Verify Dependabot security alerts and coordinate security updates with Renovate.
+- [x] Use squash-only merges and automatically delete merged branches.
+- [x] Enable secret-scanning push protection where available.
+- [x] Enable Dependabot alerts and auto-dismiss low, medium, and high severity alerts; keep
+  Dependabot security-update PRs disabled and use Renovate for dependency updates.
+- [x] Verify the Renovate GitHub App has read access to Dependabot alerts for security-fix PRs.
 
 ## 2. Supply-chain security
 
