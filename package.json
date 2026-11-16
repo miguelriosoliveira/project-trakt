@@ -2,9 +2,9 @@
 	"name": "project-trakt",
 	"version": "0.1.0",
 	"private": true,
-	"packageManager": "pnpm@12.18.0",
+	"packageManager": "pnpm@12.21.0",
 	"engines": {
-		"node": ">=26.13.0"
+		"node": ">=26.13.1"
 	},
 	"scripts": {
 		"dev": "next dev",
@@ -20,14 +20,14 @@
 		"prepare": "husky"
 	},
 	"dependencies": {
-		"@sentry/nextjs": "^11.11.0",
-		"next": "16.4.5",
+		"@sentry/nextjs": "^11.12.0",
+		"next": "16.4.6",
 		"react": "19.3.1",
 		"react-dom": "19.3.1",
 		"react-icons": "^5.7.0"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "2.6.6",
+		"@biomejs/biome": "2.6.7",
 		"@miguelriosoliveira/shared-configs": "github:miguelriosoliveira/shared-configs",
 		"@stryker-mutator/core": "^10.1.1",
 		"@stryker-mutator/vitest-runner": "^10.1.1",
@@ -38,12 +38,12 @@
 		"@types/node": "^26.6.6",
 		"@types/react": "^19.3.0",
 		"@types/react-dom": "^19.3.0",
-		"@vitejs/plugin-react": "^6.2.1",
+		"@vitejs/plugin-react": "^6.3.0",
 		"@vitest/coverage-v8": "^5.1.0",
 		"husky": "^9.1.7",
-		"jsdom": "^31.0.0",
+		"jsdom": "^31.0.1",
 		"lint-staged": "^17.6.0",
-		"postcss": "^8.5.32",
+		"postcss": "^8.5.33",
 		"tailwindcss": "^4.3.5",
 		"tailwint": "^1.1.16",
 		"typescript": "^7.0.2",
